@@ -17,4 +17,9 @@ class CustomRoutesTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "that a profile page works" do
+    get '/csmith'
+    assert_response :success
+  end
+
 end
